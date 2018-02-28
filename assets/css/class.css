@@ -1,0 +1,67 @@
+
+/* =============== Notes ===============*/
+#right-menu
+{
+    position: fixed;
+    z-index: 1000;
+    display:block;
+    width: 350px;
+/*    position: absolute;*/
+    top: 50px;
+    right: -350px;
+    height: 100%;
+    background: rgba( 68, 68, 68, 0.9 );
+    margin: 0;
+}
+
+.notes-ta
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 95%;
+    height: 80vh;
+}
+
+.notesTitle
+{
+	display: table-cell;
+	
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 25px;
+	color: #fff;
+}
+
+.saveButton
+{
+	display: table-cell;
+	float: right;
+	margin-top: 20px;
+	margin-right: 15px;
+	border: #fff 1px solid;
+	font-size: 15px;
+	color: #fff;
+	background: transparent;
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.saveButton:hover
+{
+    background: rgba( 0, 0, 0, 0.8 );
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.fixed-header
+{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    height: 60px;
+    width: 350px;
+    background: rgba( 96, 158, 195, 0.8 );
+}

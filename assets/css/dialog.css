@@ -1,0 +1,7 @@
+.modal-header
+{
+	background: rgba(192, 57, 43, 0.9);
+	color: white;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}

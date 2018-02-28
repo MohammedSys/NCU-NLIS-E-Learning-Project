@@ -1,0 +1,53 @@
+green
+{
+	color: #3c763d;
+}
+red
+{
+	color: #a94442;
+}
+blue
+{
+	color: #31708f;
+}
+
+.well
+{
+	background: rgba(255, 255, 255, 0.7);
+}
+.well > p, .well > li
+{
+	font-weight: 900;
+	font-size: 1.3em;
+}
+.info-div
+{
+	text-align: center;
+}
+
+.quiz-title
+{
+	
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	width: 30%;
+	min-width: 200px;
+	margin: 10px;
+	
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	text-align: center;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 900;
+	
+	border-radius: 5px;
+    /*border: white 2px solid;*/
+    background: rgba(192, 57, 43, 0.7);
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}

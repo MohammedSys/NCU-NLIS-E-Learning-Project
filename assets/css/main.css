@@ -1,0 +1,63 @@
+/* Recently Viewed Courses */
+.recent
+{
+	width: 100%;
+	
+	padding: .3em;
+	padding-left: 10px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	
+	background: rgba(102, 179, 255, 0.7);
+	border-radius: 10px;
+	border: none;
+	
+	color: white;
+	text-align: center;
+}
+
+.recent-btn
+{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	
+	padding-left: 0;
+	padding-right: 0;
+	
+	margin-right: 20px;
+	
+	border-radius: 5px;
+    /*border: white 2px solid;*/
+    /*background: rgba(192, 57, 43, 0.7);*/
+	
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	color: white;
+	font-size: 1.3em;
+	
+	text-align: center;
+}
+
+.btn-danger
+{
+	padding: 6px 12px;
+	
+	background: rgba(192, 57, 43, .8);
+	border: rgba(192, 57, 43, .8) 1px solid;
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.btn-danger:hover
+{
+	background: rgba(192, 57, 43, .6);
+	border: rgba(192, 57, 43, .6) 1px solid;
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}

@@ -1,0 +1,15 @@
+#exam-header {
+	margin-bottom: 10px;
+}
+#exam-header > form {
+	display: inline;	
+}
+#exam-header > p, .form-control
+{
+	font-weight: 900;
+}
+
+.well
+{
+	background: rgba(255, 255, 255, 0.7);
+}

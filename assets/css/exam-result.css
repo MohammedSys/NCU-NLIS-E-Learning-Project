@@ -1,0 +1,156 @@
+.well
+{
+	background: rgba(255, 255, 255, 0.7);
+	text-align: center;
+}
+.well > p
+{
+	font-size: 1.3em;
+	font-weight: 900;
+}
+green
+{
+	color: #3c763d;
+}
+red
+{
+	color: #a94442;
+}
+blue
+{
+	color: #31708f;
+}
+
+.innerDiv
+{
+    position: relative;
+	text-align: left;
+    background: rgba( 255, 255, 255, 0.7 );
+}
+.btn-mark
+{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+	
+	padding: 2px;
+    
+    font-size: 1.2em;
+    font-weight: 900;
+    height: 30px;
+}
+.input-save
+{
+    height: 40px;
+    padding: 5;
+    
+    font-weight: 900;
+}
+
+.your-ans
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: rgba( 255, 5, 255, 0.3 );
+    border: white 1px solid;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.correct-ans
+{
+    background: rgba( 2, 247, 142, 0.3 );
+    border: white 1px solid;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+#submitDiv
+{
+    background: rgba( 255, 255, 255, 0.7 );
+}
+
+.quiz-title
+{
+	width: 30%;
+}
+.quiz-result
+{
+	width: 40%;
+}
+.quiz-title, .quiz-result
+{
+	display: inline-block;
+	height: 50px;
+	line-height: 50px;
+	min-width: 200px;
+	margin: 10px;
+	
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+	color: white;
+	font-size: 1.3em;
+	font-weight: 900;
+	
+	border-radius: 5px;
+    /*border: white 2px solid;*/
+    background: rgba(192, 57, 43, 0.7);
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+.chart-box
+{
+	position: relative;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 60%;
+	/*border: #000 2px solid;*/
+	vertical-align: top;
+}
+.chart-legend
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 80px;
+}
+@media (max-width: 768px)
+{
+	.chart-legend
+	{
+		right: -60px;
+	}
+}
+
+.color-box
+{
+	width: 15px;
+	height: 15px;
+	margin: 5px;
+	border-radius: 50%;
+}
+.chart-legend-txt
+{
+	font-weight: 900;
+}
+.hl-green
+{
+	background: #5AD3D1;
+}
+.hl-red
+{
+	background: #FF5A5E;
+}
+.hl-yellow
+{
+	background: #FFC870;
+}

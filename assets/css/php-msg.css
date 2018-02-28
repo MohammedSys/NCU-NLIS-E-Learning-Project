@@ -1,0 +1,16 @@
+.php-msg
+{
+	width: 60%;
+	font-size: 20px;
+	font-weight: 900;
+	text-align: center;
+	color: white;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 5px;
+	
+	border-radius: 5px;
+	background: rgba(68, 68, 68, 0.5);
+}

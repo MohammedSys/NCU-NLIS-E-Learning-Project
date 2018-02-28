@@ -1,0 +1,152 @@
+#content > div {
+	width: 90%;
+}
+
+#clock
+{
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+}
+
+.fixed-clock
+{
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left:50%;
+    margin-left: -125px;
+    /*right: 20px;*/
+    width: 250px !important;
+    /*background: rgba( 96, 158, 195, 0.8 );*/
+    background: rgba(68, 68, 68, 0.9 );
+    color: white;
+    
+    /* support Safari, Chrome */
+    -webkit-border-radius: 5px;
+    /* support firefox */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding-top: 5px;
+}
+
+#quizHead
+{
+    margin-left: auto;
+    margin-right: auto;
+	/*background: rgba(255, 255, 255, 0.7);*/
+	/* support Safari, Chrome */
+	-webkit-border-radius: 5px;
+	/* support firefox */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+    
+    text-align: center;
+    
+    /*padding: 5px;*/
+}
+
+.q-title
+{
+    position: absolute;
+    top: 20px;
+    /*left: -10px;*/
+    
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    
+    border-radius: 5px;
+    /*border: white 2px solid;*/
+    background: rgba(192, 57, 43, 0.7);
+    
+    color: white;
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    
+    overflow : hidden;
+    text-overflow : ellipsis;
+    white-space : nowrap;
+}
+.trapezoid
+{
+    position: relative;
+    height: 0;
+    width: 50% !important;
+    min-width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 60px solid rgba(255, 255, 255, 0.7);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    
+    text-align: center;
+}
+
+
+.quiz-info
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left;
+
+    font-size: 1.3em;
+    font-weight: 900;
+}
+
+#outerDiv {
+	margin: 0px auto;
+}
+
+.quizForm {	
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.7);
+	/* support Safari, Chrome */
+	-webkit-border-radius: 5px;
+	/* support firefox */
+	-moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    border-top-left-radius: 0px;
+    padding: 5px;
+}
+
+.innerDiv {	
+	margin-top: 20px;
+	padding: 10px 15px 5px 15px;
+	/*background-color: rgba(255, 173, 92, 0.5);*/
+	/* support Safari, Chrome */
+	-webkit-border-radius: 5px;
+	/* support firefox */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.innerDiv > label {
+	display: block;
+    font-size: 1.3em;
+}
+
+#submitDiv
+{
+    /*background: rgba(255, 255, 255, 0.5);*/
+	padding: 10px 5px;
+	text-align: center;
+    /* support Safari, Chrome */
+    -webkit-border-radius: 5px;
+    /* support firefox */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.quizSubject {
+	font-weight: 900;
+	color: black;
+    
+    font-size: 1.3em;
+}
+

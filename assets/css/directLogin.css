@@ -1,0 +1,24 @@
+#info {
+	width: 30%;
+	height: 150px;
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: rgb(230, 230, 230);
+	/* support Safari, Chrome */
+	-webkit-border-radius: 20px;
+	/* support firefox */
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	text-align: center;
+	top: 100px;
+	position: relative;
+}
+
+#info > h1 {
+	font-size: 50px;
+}
+
+#info > p {
+	margin-top: 5px;
+	font-size: larger;
+}

@@ -1,0 +1,139 @@
+.accImg-small
+{
+    width: 20px;
+    height: 20px;
+                
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+
+.accImg-div
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.accImg
+{
+    width: 60px;
+    height: 60px;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+.overlay
+{
+	position: absolute;
+    width: 60px;
+	height: 60px;
+    
+	left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    margin-top: 10px;
+	
+	color: #fff;
+	background:rgba(0, 0, 0, 0.3);
+	display: none;
+	
+	text-align: center;
+	
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-o-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+}
+.accImg-div:hover .overlay
+{
+	display: block;
+}
+
+.acc-name
+{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.open > .dropdown-menu {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    
+}
+.open > .dropdown-menu li a {
+    color: #000;
+}
+.dropdown-menu li a{
+    color: #fff;
+}
+.dropdown-menu {
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    
+    display: block;
+    
+    border: 1px solid rgba(255, 255, 255, 1);
+    
+    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+}
+.dropup .dropdown-menu {
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+}
+
+.navbar .nav > li > .dropdown-menu:after {
+    
+}
+.dropup > .dropdown-menu:after {
+    border-bottom: 0;
+    border-top: 6px solid rgba(39, 45, 51, 0.9);
+    top: auto;
+    display: inline-block;
+    bottom: -6px;
+    content: '';
+    position: absolute;
+    left: 50%;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+@media (max-width:768px)
+{
+    .search-icn
+    {
+        display: none;
+    }
+}
+
+/*.navbar-nav
+{
+    height: 100%;
+}
+.navbar-nav > li, .navbar-nav > li > a
+{
+    height: 100%;
+}
+.systemname > span
+{
+    font-size: 1.3em;
+}*/

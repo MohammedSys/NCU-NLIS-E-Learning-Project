@@ -1,0 +1,122 @@
+.exam-slide
+{
+	text-align: center;
+}
+
+td
+{
+	font-weight: 900;
+}
+
+.btn-xs
+{
+	color: white !important;
+	background: rgba(217, 83, 79, 0.8);
+}
+.btn-xs:hover
+{
+	background: rgba(217, 83, 79, 0.5);
+	
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+.DIVclose {
+	padding: 0px!important;
+	border-top: none !important;
+}
+
+.DIVclose > div  {
+	transition: height 1s,opacity 1s;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.DIVopen
+{
+	padding: 0px!important;
+	width: 100%;
+	min-width: 650px;
+}
+
+.DIVopen > div  {
+	transition: height 1s,opacity 1s;
+	/*width: 100%;*/
+    height: 250px;
+    opacity: 1;
+}
+
+.DIVopen > div > p {
+	line-height: 20px;
+	font-size: 14px;
+}
+
+.chart-box
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: -150px;
+	position: relative;
+	width: 400px;
+	/*border: #000 2px solid;*/
+	vertical-align: top;
+}
+.chart-legend
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100px;
+	height: 80px;
+}
+.color-box
+{
+	width: 15px;
+	height: 15px;
+	margin: 5px;
+	border-radius: 50%;
+}
+.chart-legend-txt
+{
+	font-weight: 900;
+}
+.hl-green
+{
+	background: #5AD3D1;
+}
+.hl-red
+{
+	background: #FF5A5E;
+}
+.hl-yellow
+{
+	background: #FFC870;
+}
+
+.chart-detail
+{
+	display: inline-block;
+	width: 200px;
+	margin-top: 15px;
+	padding: 10px;
+	/*border: #ff1212 2px solid;*/
+	border-radius: 10px;
+	background: rgba(102, 179, 255, 0.8);
+	vertical-align: top;
+}
+.chart-detail-title
+{
+	width: 100%;
+	text-align: center !important;
+}
+.chart-detail > p
+{
+	text-align: left;
+}
+.chart-detail-title, .chart-detail > p
+{
+	font-weight: 900;
+	color: rgba(0, 0, 0, 0.8);
+}

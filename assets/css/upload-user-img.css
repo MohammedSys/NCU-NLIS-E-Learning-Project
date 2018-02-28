@@ -1,0 +1,70 @@
+h2, h3
+{
+    color: rgba(192, 57, 43, 0.8);
+}
+#content
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-div
+{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 90%;
+    text-align: center;
+}
+
+input[type="file"]
+{
+    display: none;
+}
+.custom-file-upload
+{
+    display: inline-block;
+    
+    margin: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    
+    background: rgba(255, 255, 255, 0.3);
+    
+    /* support Safari, Chrome */
+    -webkit-border-radius: 5px;
+    /* support firefox */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.custom-file-upload, .custom-file-upload > i
+{
+    font-weight: 900;
+}
+
+#file-name
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    padding: 1%;
+    
+    background: rgba(255, 255, 255, 0.3);
+    /* support Safari, Chrome */
+    -webkit-border-radius: 5px;
+    /* support firefox */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+}
+.thumb
+{
+    width: 90%;
+    border: #000 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}

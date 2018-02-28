@@ -1,0 +1,190 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+::-webkit-scrollbar
+{ 
+    display: none; 
+}
+
+#page-content-wrapper
+{
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    
+    left: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+/* Sidebar Styles */
+#side-menu-main
+{
+    z-index: 1000;
+    
+    top: 0px;
+    left: -250px;
+    
+    width: 250px;
+    height: 100%;
+    
+    background: rgba(68, 68, 68, 0.9);
+    position: fixed;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    
+    overflow: scroll;
+}
+
+.sidebar-nav {
+    width: 250px;
+    margin-top: 50px;
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    /*color: rgba(255, 187, 187, 1);*/
+    color: white;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: white;
+    /*background: rgba(255,255,255,0.2);*/
+    background: rgba(192, 57, 43, 0.7);
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 40px;
+    font-size: 18px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: white;
+}
+
+.sidebar-b-home
+{
+    height: 40px !important;
+    line-height: 40px !important;
+}
+.sidebar-b-home:hover
+{
+    background: rgba(255,255,255,0.2);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: white;
+    background: none;
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.ch-title
+{
+    text-indent: 0px;
+    padding: 0.5em;
+    /*background: rgba( 255, 5, 255, 0.3 );*/
+    background: rgba(192, 57, 43, 0.7);
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    border: #fff 1px solid;
+    text-align: center;
+}
+
+.ch
+{
+    display: inline;
+    color: rgba(255, 255, 255, 0.9);
+    /*color: rgba( 255, 5, 255, 0.9 );*/
+    /*Font Border*/
+    /*text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px white;*/
+    font-weight: 900px;
+    font-size: 1em;
+}
+
+/* chpater button */
+.chButton
+{
+    border: none;
+    width: 170px;
+    background: none;
+    color:white;
+    
+    font-size: 1.2em;
+    text-align: left;
+    
+    /* text-overflow 完整的使用方法是一套組合拳，可說是缺一不可。 */
+    overflow: hidden;			/* 超出範圍的部分隱藏 */
+    white-space: nowrap;		/*  不自動斷行 */
+    text-overflow: ellipsis;
+    
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.chButton-form
+{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.chButton-form:hover
+{
+    background: rgba(192, 57, 43, 0.7);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+@media(min-width:768px) {
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+}
+
+.set-menu-open {
+    left: 0px !important; /*IT SHOLUD BE !IMPORTANT ALWAYS*/
+}
+
+.push-right {
+    left: 250px !important;
+}
+
+.content-wraper {
+    padding: 5px;
+}

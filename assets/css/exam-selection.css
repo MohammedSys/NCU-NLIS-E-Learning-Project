@@ -1,0 +1,78 @@
+#content > div {
+	width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    
+    padding: 10px;
+    
+    background: rgba(255, 255, 255, 0.7);
+
+/*	font-family: Microsoft JhengHei;*/
+
+    /* support Safari, Chrome */
+	-webkit-border-radius: 5px;
+	/* support firefox */
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#content > div > h2 {
+	text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.title-p
+{
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+.section-div {
+	margin: 2% 0;
+	background-color: rgba(68, 68, 68, 0.5);
+	padding: 10px;
+    
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.inner-section-div {
+    background: none;
+/*	padding-left: 10px;*/
+    text-align: center;
+    
+    /* support Safari, Chrome */
+    -webkit-border-radius: 5px;
+    /* support firefox */
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.inner-section-div > span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+	color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    font-weight: 900;
+/*	font-family: Microsoft JhengHei;*/
+}
+
+.chapterUL {
+	width: 100%;
+    border: #ff1212 1px solid;
+}
+
+.chapterUL > li {
+	display: inline;
+}
+
+.chapterUL > li > form {
+	display: inline;
+    background: none;
+}
+
+.list-inline li
+{
+    line-height: 40px;
+}

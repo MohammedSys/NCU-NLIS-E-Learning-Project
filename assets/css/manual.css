@@ -1,0 +1,54 @@
+.full
+{
+	padding: 10px;
+}
+
+.center-div
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	
+	text-align: center;
+	
+	padding: 10px;
+	border-radius: 10px;
+	background: rgba(68, 68, 68, 0.8);
+}
+.center-div > h2
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+.center-div > p
+{
+	font-size: 1.4em;
+}
+.center-div > h2, .center-div > h3, .center-div > p
+{
+	color: white;
+	font-weight: 900;
+}
+.center-div > img
+{
+	width: 80%;
+	max-width: 600px;
+	margin: 5px;
+	border: white 2px solid;
+	border-radius: 10px;
+}
+
+.img-menu-btn
+{
+	width: 100px !important;
+}
+.img-detail
+{
+	width: 300px !important;
+}
+
+pink
+{
+	color: rgba(255, 187, 187, 1);
+}

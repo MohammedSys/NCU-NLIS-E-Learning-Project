@@ -1,0 +1,30 @@
+.back-to-top
+{
+    position: fixed;
+    z-index: 1000;
+    bottom: 2em;
+    right: 10px;
+    text-decoration: none !important;
+    /*color: #46A3FF;
+    background-color: rgba(0, 0, 0, 0);*/
+    /*background-color: rgba(68, 68, 68, 0.50);*/
+    background: rgba(192, 57, 43, .7);
+    color: white;
+    font-size: 50px;
+    
+    display: none;
+    
+    border-radius: 50%;
+    
+    transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+.back-to-top:hover
+{   
+    padding-top: 0;
+    /*background-color: rgba(68, 68, 68, 0.50);*/
+    background: rgba(192, 57, 43, .7);
+    color: white;
+}
