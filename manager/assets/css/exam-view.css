@@ -1,0 +1,11 @@
+.page-header
+{
+    padding-bottom: 5px;
+    margin: 0;
+    border-bottom: none;
+}
+
+.td-description
+{
+    width: 20% !important;
+}

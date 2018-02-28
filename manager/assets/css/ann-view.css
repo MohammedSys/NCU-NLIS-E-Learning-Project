@@ -1,0 +1,15 @@
+.fixed
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.page-header
+{
+    padding-bottom: 2px;
+    margin: 10px;
+    border-bottom: none;
+}

@@ -1,0 +1,52 @@
+.row
+{
+	width: 100%;
+	/*border: #00bb22 2px solid;*/
+}
+
+.center-view
+{
+	width: 100%;
+	/*border: #ff1212 1px solid;*/
+}
+
+.selection-box
+{
+	width: 100%;
+}
+.btn
+{
+	height: 40px;
+	line-height: 40px;
+}
+.btn > span
+{
+	margin-bottom: 2px;
+}
+
+.iframe-box
+{
+	width: 100%;
+	/*border: #ff1212 1px solid;*/
+}
+.embed-responsive-hippo
+{
+	padding-bottom: 95%;
+}
+iframe
+{
+	border: #b5b5b5 1px solid;
+}
+
+@media (min-width: 769px)
+{
+	.selection-box
+	{
+		width: 25%;
+	}
+	
+	.iframe-box
+	{
+		width: 75%;
+	}
+}

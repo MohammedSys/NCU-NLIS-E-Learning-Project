@@ -1,0 +1,69 @@
+/*控制每一題Div的間距*/
+#questionSection > div {
+	margin: 2% 0;
+}
+
+hr {
+    height: 1px;
+    background-color:#555;
+    margin-top: 10px;
+	margin-bottom: 10px;
+    width: 100%;
+}
+/*控制輸入考題主題章節區塊中，欄位的上下間距*/
+#topicDiv > div {
+	padding: 5px 0;
+}
+
+/*控制輸入考題區塊中，欄位的上下間距*/
+#questionSection > div > div {
+	padding: 6px 0;
+}
+#questionSection > div > label {
+	padding: 6px 0;
+}
+
+.page-header
+{
+    padding-bottom: 2px;
+    margin: 10px;
+    border-bottom: none;
+}
+.col-md-2
+{
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-size: 1.2em;
+}
+/*控制input,select,textarea,說明文字的寬度*/
+.col-md-10 > input{
+	width: 90%;
+	margin: 0 auto;
+}
+.col-md-10 > select {
+	width: 90%;
+	margin: 0 auto;
+}
+.col-md-10 > textarea {
+	width: 90%;
+	margin: 0 auto;
+}
+.help-block {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.text-danger {
+	width: 90%;
+	margin: 0 auto;
+	color:#FF3333;
+}
+
+.fixed
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 20px;
+	padding-top: 0px;
+}

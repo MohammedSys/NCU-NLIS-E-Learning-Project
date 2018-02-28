@@ -1,0 +1,39 @@
+#annInfo > div {
+	padding: 5px 0;
+}
+/*控制input,select,textarea,說明文字的寬度*/
+.col-md-10 > input{
+	width: 100%;
+	margin: 0 auto;
+}
+.col-md-10 > select {
+	margin: 0 auto;
+	
+}
+.col-md-10 > textarea {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.fixed
+{
+	margin-left: auto;
+	margin-right: auto;
+	
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.page-header
+{
+    padding-bottom: 2px;
+    margin: 10px;
+    border-bottom: none;
+}
+
+@media (min-width: 992px)
+{
+	.col-md-2 {
+		width: 12%; 
+	}
+}
