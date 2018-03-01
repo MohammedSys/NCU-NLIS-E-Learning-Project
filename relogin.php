@@ -2,66 +2,38 @@
 <html lang="en">
 <head>
 <?php include 'objects/head.php'; ?>
-<link rel="stylesheet" href="assets/css/signin.css">
+<!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
 <style>
-	.relogin-form
-	{
-		width: 50% !important;
-		min-width: 320px;
-		
-		margin: 0px auto;
-		margin-top: 80px;
-	}
-	.errorM
-	{
-		margin-top: 5px;
-		color: rgba(255, 187, 187, 1);
-		font-size: 1.3em;
-		font-weight: 900;
-		background: rgba(68, 68, 68, 0.7);
-		border-radius: 10px;
-		padding: 5px;
-	}
-	.relogin-form > h2
-	{
-		color: white;
-	}
+.relogin-form
+{
+	width: 50% !important;
+	min-width: 320px;
+	
+	margin: 0px auto;
+	margin-top: 80px;
+}
+.errorM
+{
+	margin-top: 5px;
+	color: rgba(255, 187, 187, 1);
+	font-size: 1.3em;
+	font-weight: 900;
+	background: rgba(68, 68, 68, 0.7);
+	border-radius: 10px;
+	padding: 5px;
+}
+.relogin-form > h2
+{
+	color: white;
+}
 </style>
-
-<!--JavaScript Library-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-<!--Customized JS Code-->
-<script type="text/javascript" src="assets/js/openlink.js"></script>
-<script>
-
-</script>
 </head>
 <body class="full">
 	<!-- Page Header -->
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div id="logo_printer">
-						<table class="a-hover txt-white" border="0" cellspacing="0" cellpadding="0">
-							<tr onclick="openlink('./index.php')">
-								<td><img alt="Brand" class="brand-icon" src="assets/img/newlife_circle.png"></td>
-								<td width="130px"><div class="systemname">E-learning System<br/>新生命資訊服務 Co.</div></td>
-							</tr>
-						</table>
-					</div>
-				</div>
-					
+				<?php include 'objects/navbar-left-list.php'; ?>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<?php include 'objects/outsystem-nav-link.php'; ?>
