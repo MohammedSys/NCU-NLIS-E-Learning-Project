@@ -1,80 +1,112 @@
-<?php	
-	include("connection.php");	
+<?php
+	require_once __DIR__ . '/../assets/comps/vendor/autoload.php';
+	include( "./config.php" );
+	include( "./connection.php" );
 	//設定編碼，避免中文字出現亂碼
-	mysql_query("set names 'utf8'");
+	mysql_query( "set names 'utf8'" );
 	//接收使用者輸入的帳號與信箱
 	$userAccount = htmlspecialchars($_POST['account']);
 	$userEmail = htmlspecialchars($_POST['email']) ;
 	//連結資料庫
-	$sql = "SELECT name,email,password FROM userAccount WHERE name = '$userAccount'";
+	// create temporary password
+	$tmppass = generateRandomString( 10 );
+	$sql = "UPDATE userAccount SET password= PASSWORD('$tmppass') WHERE username = '$userAccount'";
+	mysql_query($sql);
+	// $sql = "SELECT name,email,password FROM userAccount WHERE name = '$userAccount'";
+	$sql = "SELECT username,email,password FROM userAccount WHERE username = '$userAccount'";
 	$result = mysql_query($sql);
 	$row = mysql_fetch_row($result);
-	if( $row[0] == $userAccount && $row[1] == $userEmail) {
-		require '../assets/comps/phpmailer/PHPMailerAutoload.php';
+
+	if( $row[0] == $userAccount && $row[1] == $userEmail)
+	{
 		mb_internal_encoding('UTF-8');    // 內部預設編碼改為UTF-8，解決信件標題亂碼問題
 		ini_set('display_errors', 1);
-		$mail = new PHPMailer();
+
+		$mail = new PHPMailer\PHPMailer\PHPMailer();
+		// Ref. https://stackoverflow.com/questions/46059612/uncaught-error-class-phpmailer-not-found
+
 		$mail->IsSMTP();
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPDebug = 0;  // debugging: 1 = errors and messages, 2 = messages only
 		$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
-		$mail->Host = 'ssl://smtp.gmail.com';
-		$mail->Port = 465; 
-		$mail->Username = "elearning.nlis@gmail.com";
-		$mail->Password = "elearning0901@nlis";
-		//這邊是你的gmail帳號和密碼
-		$mail->FromName = "NewLife";
-		// 寄件者名稱(你自己要顯示的名稱)
-		$webmaster_email = "elearning.nlis@gmail.com"; 
-		//回覆信件至此信箱
+		$mail->Host = $mailing_server;
+		$mail->Port = $mailing_port;
 
-		$email = $userEmail;
+		// 這邊是你的 mail 帳號和密碼
+		$mail->Username = $mail_acc;
+		$mail->Password = $mail_pwd;
+		// 寄件者名稱(你自己要顯示的名稱)
+		$mail->FromName = $mail_name;
+
 		// 收件者信箱
-		$name = "新生命使用者";
+		$email = $userEmail;
 		// 收件者的名稱or暱稱
-		$mail->From = $webmaster_email;
+		$name = "新生命使用者";
+		
+		$mail->From = $mail_acc;
 			
 		$mail->AddAddress($email,$name);
-		$mail->AddReplyTo($webmaster_email,"Squall.f");
+		//回覆信件至此信箱
+		$mail->AddReplyTo( $mail_acc, "Squall.f" );
 		//這不用改
 		
-		$mail->WordWrap = 50;
-		//每50行斷一次行
+		$mail->WordWrap = 50; // 每 50 行斷一次行
 		
-		//$mail->AddAttachment("/XXX.rar");
-		// 附加檔案可以用這種語法(記得把上一行的//去掉)
+		//$mail->AddAttachment("/XXX.rar"); // 附加檔案可以用這種語法
 		
 		$mail->IsHTML(true); // send as HTML
-		$mail->Subject = mb_encode_mimeheader("新生命資訊服務公司_Elearning-System_忘記密碼", "UTF-8");
+		$mail->Subject = mb_encode_mimeheader( $mail_subject, "UTF-8" );
 		// 信件標題
-		$message = "親愛的使用者".$userAccount.":<br><br>您的E-learning學習平台密碼為: ".$row[2]."<br>請依帳密再次登入系統。<br>新生命資訊公司 敬上";
+		$message = "親愛的使用者：".$userAccount.":<br>您的 E-learning 學習平台 暫時密碼 為: ".$tmppass."<br>請以該密碼登入系統後，儘速更新您的密碼。<br>新生命資訊公司 敬上";
 		$mail->Body = mb_detect_encoding($message);
-		//信件內容(html版，就是可以有html標籤的如粗體、斜體之類)
+		//信件內容 (html版，就是可以有 html 標籤的如粗體、斜體之類)
 		$mail->AltBody = mb_detect_encoding($message); 
-		//信件內容(純文字版)
-		
+
 		if(!$mail->Send())
 		{
 			$message = "寄信發生錯誤：".$mail->ErrorInfo;
 			//如果有錯誤會印出原因
-			echo '<script type="text/javascript">alert("'.$message.'");</script>';
-			echo "<meta http-equiv=REFRESH CONTENT=2;url=../forgetPassword.php>";
+			alertMsg( $message );
+			backToFgtPwd();
 		}
 		else
 		{ 
-			$message = "密碼寄出成功!";
-			echo '<script type="text/javascript">alert("'.$message.'");</script>';
-			echo "<meta http-equiv=REFRESH CONTENT=2;url=../index.php>";		
+			$message = "密碼取回信寄出成功!";
+			alertMsg( $message );
+			backToIndex();
 		}
 	}
 	else 
 	{
 		$message = "輸入帳號或信箱不符，請重新輸入。";
+		alertMsg( $message );
+		backToFgtPwd();
+	}
+
+	function alertMsg( $message )
+	{
 		echo '<script type="text/javascript">alert("'.$message.'");</script>';
+	}
+
+	function backToIndex()
+	{
+		echo "<meta http-equiv=REFRESH CONTENT=2;url=../index.php>";
+	}
+	function backToFgtPwd()
+	{
 		echo "<meta http-equiv=REFRESH CONTENT=2;url=../forgetPassword.php>";
 	}
 
-	
+	function generateRandomString( $length = 10 )
+	{
+		$characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+		$charactersLength = strlen($characters);
+		$randomString = '';
+		for ($i = 0; $i < $length; $i++) {
+			$randomString .= $characters[rand(0, $charactersLength - 1)];
+		}
+		return $randomString;
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
