@@ -9,6 +9,7 @@
 
 	$sql ="SELECT * FROM userAccount where name = '$username' and password = PASSWORD( '$password' )";
 	$result = mysql_query($sql);
+	echo $result;
 	
 	
 	if( $row = @mysql_fetch_row($result) )
@@ -19,7 +20,7 @@
 		else echo '<meta http-equiv=REFRESH CONTENT=3;url=../main.php>';
 		$_SESSION['account'] = $username;
 	}
-	else errorLogin();
+	// else errorLogin();
 
 	function errorLogin()
 	{
