@@ -10,8 +10,8 @@
 	//連結資料庫
 	// create temporary password
 	$tmppass = generateRandomString( 10 );
-	$sql = "UPDATE userAccount SET password= PASSWORD('$tmppass') WHERE username = '$userAccount'";
-	mysql_query($sql);
+	$sql = "UPDATE userAccount SET password = PASSWORD( '$tmppass' ) WHERE username = '$userAccount'";
+	mysql_query( $sql );
 	// $sql = "SELECT name,email,password FROM userAccount WHERE name = '$userAccount'";
 	$sql = "SELECT username,email,password FROM userAccount WHERE username = '$userAccount'";
 	$result = mysql_query($sql);
@@ -19,7 +19,7 @@
 
 	if( $row[0] == $userAccount && $row[1] == $userEmail)
 	{
-		mb_internal_encoding('UTF-8');    // 內部預設編碼改為UTF-8，解決信件標題亂碼問題
+		mb_internal_encoding('UTF-8');    // 內部預設編碼改為 UTF-8，解決信件標題亂碼問題
 		ini_set('display_errors', 1);
 
 		$mail = new PHPMailer\PHPMailer\PHPMailer();
