@@ -1,18 +1,14 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-$servername = "127.0.0.1";
-$username = "";
-$password = "";
-$db_name = "";
+    include( "./config.php" );
 
-// Create connection
-$conn = mysql_connect($servername,$username,$password);
+    // Create connection
+    $conn = mysql_connect($servername,$username,$password);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-if(!@mysql_select_db($db_name))
+    if(!@mysql_select_db($db_name))
         die("connect fail"); 
 ?>
