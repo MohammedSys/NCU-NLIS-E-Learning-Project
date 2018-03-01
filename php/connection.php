@@ -1,5 +1,5 @@
 <?php
-    include( "./config.php" );
+    include( "config.php" );
 
     // create connection
     $conn = mysql_connect( $servername, $username, $password );
