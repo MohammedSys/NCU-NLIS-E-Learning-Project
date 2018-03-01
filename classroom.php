@@ -138,7 +138,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.html'; ?>
+<?php include 'objects/head.php'; ?>
 
 <script type="text/javascript" src="assets/js/class-btn.js"></script>
 <script type="text/javascript" src="assets/comps/oe/assets/js/online-editor.js"></script>

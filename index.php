@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.html'; ?>
+<?php include 'objects/head.php'; ?>
 <script>
 	$(document).ready(function() {
 		$('.carousel').carousel({

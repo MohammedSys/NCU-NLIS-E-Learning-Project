@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.html'; ?>
+<?php include 'objects/head.php'; ?>
 </head>
 <body id="B" class="full">
 	<?php include 'objects/siderbar.php'; ?>
