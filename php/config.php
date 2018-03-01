@@ -10,7 +10,8 @@ $db_name = "";
 // for the mailer.php
 $mail_subject = "E-learning 忘記密碼";
 
-$mailing_server = 'ssl://smtp.gmail.com';
+// $mailing_server = 'ssl://smtp.gmail.com';
+$mailing_server = 'smtp.gmail.com';
 $mailing_port = 465;
 
 // who send the mail?
