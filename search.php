@@ -7,7 +7,7 @@
 ?>
 <?php
 //PDFParser 預設載入項目
-include 'assets/comps/search-engine/autoload.php';
+include 'assets/comps/vendor/autoload.php';
 // searching time limit
 set_time_limit("600");
 //get the searching keyword

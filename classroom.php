@@ -320,7 +320,7 @@
 		<div id="page-content-wrapper" class="margin-t-60">
 			<!-- (Default) 16:9 aspect ratio -->
 			<div id="slides-printer" class="embed-responsive embed-responsive-16by9">
-				<iframe name="tmsbox" id="displayFrame" class="embed-responsive-item" src="assets/comps/pdf.js/web/viewer.html?file=./assets/tms/<?php echo $URL; if ($page != null) {echo "#page=".$page;} else {echo "#page=1";} ?>"></iframe>
+				<iframe name="tmsbox" id="displayFrame" class="embed-responsive-item" src="assets/comps/pdf-js/web/viewer.html?file=./assets/tms/<?php echo $URL; if ($page != null) {echo "#page=".$page;} else {echo "#page=1";} ?>"></iframe>
 			</div>
 			
 			<div>
