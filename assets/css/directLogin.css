@@ -1,9 +1,9 @@
 #info {
-	width: 30%;
-	height: 150px;
+	width: 40%;
+	height: 200px;
 	margin: 0 auto;
 	padding-top: 10px;
-	background-color: rgb(230, 230, 230);
+	/* background-color: rgb(230, 230, 230); */
 	/* support Safari, Chrome */
 	-webkit-border-radius: 20px;
 	/* support firefox */
@@ -11,14 +11,16 @@
 	border-radius: 20px;
 	text-align: center;
 	top: 100px;
-	position: relative;
 }
-
 #info > h1 {
 	font-size: 50px;
 }
-
 #info > p {
-	margin-top: 5px;
+	margin-top: 10px;
 	font-size: larger;
+	font-weight: bold;
+}
+
+.pgbar-msg {
+    display: none;
 }
