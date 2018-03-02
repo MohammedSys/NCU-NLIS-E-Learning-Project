@@ -1,0 +1,1 @@
+<a class="back-to-top"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span></a>
