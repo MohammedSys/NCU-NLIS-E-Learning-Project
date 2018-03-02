@@ -94,6 +94,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
+	margin-bottom: 20px;
 	font-size: 20px;
 	font-weight: bold;
 	color: rgba(255, 255, 255, 0.9);
@@ -109,12 +110,12 @@
 	color: rgba(255, 255, 255, 0.9);
 	text-align: left;*/
 	
-	display: inline-block;
-	height: 50px;
-	line-height: 50px;
-	width: 40%;
+	/* display: inline-block; */
+	/* height: 50px; */
+	/* line-height: 50px; */
+	width: 100%;
 	min-width: 200px;
-	margin: 10px;
+	margin-bottom: 10px;
 	padding: 2px;
 	
 	overflow : hidden;
@@ -127,7 +128,7 @@
 	
 	border-radius: 5px;
     /*border: white 2px solid;*/
-    background: rgba(192, 57, 43, 0.7);
+    /* background: rgba(192, 57, 43, 0.7); */
 	
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
