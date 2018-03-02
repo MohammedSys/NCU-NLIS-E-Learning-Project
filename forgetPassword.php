@@ -36,9 +36,9 @@
 			<label for="inputAcc" class="sr-only">註冊的帳號</label>
 			<!--if needed, add-on: required autofocus-->
 			<input id="account" type="text" name="account" value="" class="form-control" placeholder="輸入註冊帳號" required>
-			<p class="signError" id="accountErr"></p>
 			<label for="inputPassword" class="sr-only">信箱</label>
 			<input id="email" type="email" name="email" value="" class="form-control" placeholder="輸入註冊信箱" required>
+			<p class="signError" id="accountErr"></p>
 			<p class="signError" id="emailErr"></p>
 			<button class="btn btn-lg btn-primary btn-block" type="button" onclick="emailCheck()">送出</button>
 		</form>
