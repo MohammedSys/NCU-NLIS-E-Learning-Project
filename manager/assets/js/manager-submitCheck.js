@@ -1,4 +1,6 @@
-function material_UploadCheck() {
+// Used by material-Upload.php
+function material_UploadCheck()
+{
 	//deckare submit form
 	var submitForm = document.getElementById("materialForm");
 	//declare input field value											
@@ -18,46 +20,46 @@ function material_UploadCheck() {
 	
 	//Verify account
 	if (subject == "") {
-		message += "1.尚未輸入教材主題。";
+		message += "1.尚未輸入教材主題。<br>";
 		varify =  false;
 	}
 	
 	if (chapter == "") {
-		message += "2.尚未輸入教材章節。 ";
+		message += "2.尚未輸入教材章節。<br>";
 		varify =  false;
 	}
 	
 	if (title == "") {
-		message += "3.尚未輸入教材章節標題。 ";
+		message += "3.尚未輸入教材章節標題。<br>";
 		varify =  false;
 	}
 	
 	if (intro == "") {
-		message += "4.尚未輸入教材簡介。 ";
+		message += "4.尚未輸入教材簡介。<br>";
 		varify =  false;
 	}
 	
 	if (descript == "") {
-		message += "5.尚未輸入教材敘述。 ";
+		message += "5.尚未輸入教材敘述。<br>";
 		varify =  false;
 	}
 	
 	if (teacher == "") {
-		message += "6.尚未輸入教材講師 。";
+		message += "6.尚未輸入教材講師。<br>";
 		varify =  false;
 	}
 	
 	if (file == "") {
-		message += "7.尚未選擇教材檔案。 ";
+		message += "7.尚未選擇教材檔案。<br>";
 		varify =  false;
 	}
 	
 	//check whether submit or show error
-	if ( varify == false) {
-		$("#modalMessage").text(message);
+	if ( varify == false)
+	{
+		$("#modalMessage").html( message );
 		//open message dialogue
 		$('#Modal').modal('show');
-	}else {
-		submitForm.submit();
 	}
+	else submitForm.submit();
 }
