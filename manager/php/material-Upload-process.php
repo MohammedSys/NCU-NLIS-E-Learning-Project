@@ -1,7 +1,9 @@
 <?php
- 	include("connection.php");
+	include( "config.php" );
+	include( "connection.php" );
 	//設定編碼，避免中文字出現亂碼
-	mysql_query("set names 'utf8'");
+	mysql_query( "set names 'utf8'" );
+
 	//接收教材資訊
 	$subject = htmlspecialchars($_POST['subject']) ; //教材主題
 	$chapter = htmlspecialchars($_POST['chapter']); //教材章節
@@ -10,9 +12,9 @@
 	$descript = htmlspecialchars($_POST['descript']); //教材敘述
 	$teacher = htmlspecialchars($_POST['teacher']);  //教材講師
 	// 檢查上傳資料夾是否存在，不存在則建立資料夾;
-	$upload_folder = "../../assets/tms/".$subject;
+	$upload_folder = $PATH_TMS.$subject;
 	if( !is_dir($upload_folder) ) {
-		chdir("../../assets/tms/");
+		chdir($PATH_TMS);
 		if(!mkdir($subject, 0777, true)) {
 			// var_dump(realpath($upload_folder)); 印出實體位置
 			// echo getcwd()."<br>";
@@ -33,7 +35,7 @@
 		$fileType = $_FILES["material_file"]["type"]; //the type of file 
 		$fileSize = $_FILES["material_file"]["size"]; //file size in bytes
 		$fileErrorMsg = $FILES["material_file"]["error"]; //0 for false and 1 for true
-		$target_path = "../../assets/tms/".$subject."/".basename($_FILES["material_file"]["name"]);
+		$target_path = $PATH_TMS.$subject."/".basename($_FILES["material_file"]["name"]);
 		//開始上傳檔案錯誤處理
 		if(!$fileSize > 16777215)//if file is > 16MB (Max size of MEDIUMBLOB)
 	    {
@@ -64,7 +66,7 @@
 	    else
 	    {
 		    //重新命名上傳檔案	
-		    rename($target_path, "../../assets/tms/".$subject."/Chapter-".$chapter."-slide.pdf");	
+		    rename($target_path, $PATH_TMS.$subject."/Chapter-".$chapter."-slide.pdf");	
 			$message .= '檔案庫上傳成功\\n';
 			$sql2 = "INSERT INTO teachingMaterial ( subject, chapter, title, intro, descript, teacher ) VALUES ('$subject','$chapter','$title','$intro','$descript','$teacher')";
 			//如果資料庫新增成功，處理上傳檔案
