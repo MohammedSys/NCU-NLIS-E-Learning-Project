@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.php'; ?>
+<?php include 'objects/head-outsystem.php'; ?>
 <!-- additional files to link -->
 <link rel="stylesheet" href="assets/css/forgetPassword.css">
 </head>
@@ -10,7 +10,7 @@
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
-				<?php include 'objects/navbar-left-list.php'; ?>
+				<?php include 'objects/outsystem-navbar-left.php'; ?>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<?php include 'objects/outsystem-nav-link.php'; ?>

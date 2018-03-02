@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.php'; ?>
+<?php include 'objects/head-outsystem.php'; ?>
 <script>
 $( document ).ready( function()
 {

@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php include 'objects/head.php'; ?>
+<?php include 'objects/head-outsystem.php'; ?>
 <script>
 	$(document).ready(function() {
 		$('.carousel').carousel({
@@ -21,7 +21,7 @@
 	<header>
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
-				<?php include 'objects/navbar-left-list.php'; ?>	
+				<?php include 'objects/outsystem-navbar-left.php'; ?>	
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<?php include 'objects/outsystem-nav-link.php'; ?>
@@ -86,16 +86,11 @@
 			<label for="inputAcc" class="sr-only">帳號</label>
 			<!--if needed, add-on: required autofocus-->
 			<input type="account" name="account" id="inputAcc" class="form-control" placeholder="帳號">
-			<p class="signError" id="accountErr"></p>
 			<label for="inputPassword" class="sr-only">密碼</label>
 			<input type="password" name="password" id="inputPassword" class="form-control" placeholder="密碼" required>
-			<p class="signError" id="pwdErr"></p>
-			<!--<div class="checkbox">
-				<label>
-					<input type="checkbox" value="remember-me">&nbsp;記住我
-				</label>
-			</div>-->
 			<button class="btn btn-lg btn-primary btn-block" type="button" onclick="accountCheck()">登入</button>
+			<p class="signError" id="accountErr"></p>
+			<p class="signError" id="pwdErr"></p>
 		</form>
 		<div>
 			<?php 
