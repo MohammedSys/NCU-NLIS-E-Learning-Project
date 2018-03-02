@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a href="#menu-toggle" class="navbar-brand" id="menu-toggle">系統選單</a>
+                <a class="navbar-brand" id="menu-toggle" onclick="openSideMenu( 'sidebar-menu-main', 'set-menu-open' );">系統選單</a>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>

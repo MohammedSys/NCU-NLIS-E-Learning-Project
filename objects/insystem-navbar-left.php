@@ -8,7 +8,7 @@
     </button>
     <div id="logo_printer">
         <table class="a-hover txt-white" border="0" cellspacing="0" cellpadding="0">
-            <tr id="left-menu-toggle">
+            <tr id="left-menu-toggle" onclick="onclick( 'side-menu-main', 'set-menu-open');">
                 <a href="#left-menu"></a>
                 <td><img alt="Brand" class="brand-icon" src="assets/img/newlife_circle.png"></td>
                 <td width="40px"><div class="systemname"><span class="glyphicon glyphicon-menu-hamburger"></span></div></td>
