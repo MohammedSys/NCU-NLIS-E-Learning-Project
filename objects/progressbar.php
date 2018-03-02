@@ -9,5 +9,9 @@
 </head>
 <body class="full">
 <?php include '../objects/pgbar-content.php'; ?>
+
+<!-- Modal Message -->
+<?php include '../objects/modal.php'; ?>
+
 </body>
 </html>
