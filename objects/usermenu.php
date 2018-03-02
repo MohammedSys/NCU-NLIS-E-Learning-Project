@@ -1,10 +1,10 @@
 <li class="dropdown dropdown-rwd">
 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-		<div><img class="accImg-small" src=<?php echo "/uploads/".$_SESSION['account'].".JPG";?>>&nbsp;<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
+		<div><img class="accImg-small" src=<?php echo "uploads/".$_SESSION['account'].".jpg";?>>&nbsp;<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></div>
 	</a>
 	<ul class="dropdown-menu">
 		<li><div class="accImg-div" onclick="javascript:location.href='upload-user-img.php'">
-				<img class="accImg" src=<?php echo "/uploads/".$_SESSION['account'].".JPG";?>>
+				<img class="accImg" src=<?php echo "uploads/".$_SESSION['account'].".jpg";?>>
 				<div class="overlay"><span>更改</span></div>
 			</div>
 		</li>
