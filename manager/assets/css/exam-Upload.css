@@ -1,13 +1,14 @@
-/*控制每一題Div的間距*/
-#questionSection > div {
-	margin: 2% 0;
+/* 控制每一題 div 的間距 */
+#questionSection > div
+{
+	margin-top: 30px;
 }
 
 hr {
     height: 1px;
     background-color:#555;
-    margin-top: 10px;
-	margin-bottom: 10px;
+    /* margin-top: 10px;
+	margin-bottom: 10px; */
     width: 100%;
 }
 /*控制輸入考題主題章節區塊中，欄位的上下間距*/

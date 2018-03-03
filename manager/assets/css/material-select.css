@@ -17,12 +17,12 @@
 .btn
 {
 	height: 40px;
-	line-height: 40px;
+	/* line-height: 40px; */
 }
-.btn > span
+/* .btn > span
 {
 	margin-bottom: 2px;
-}
+} */
 
 .iframe-box
 {
