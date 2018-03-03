@@ -7,34 +7,12 @@
 ?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta name="Author" content="NCU ISQ Group 16">
-		<meta name="Description" content="The manager interface of New Life Co. E-learning System.">
-		<meta name="Creation-Date" content="01-Sep-2015 08:00">		
-		<meta name="viewport" content="width=device-width, initial-scale=1">	
-		<title>E-learning System</title>	
-		<!--icon-->
-		<link href="../assets/img/newlife_circle.png" rel="SHORTCUT ICON">
-		<!--Bootstrap-->
-		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../assets/css/bootstrap-social.css">
-		<link rel="stylesheet" href="../assets/css/font-awesome.css">	
-		
-		<!--Customized CSS Settings-->
-		<!-- fixed menu setting -->
-		<link href="../assets/css/hippo.css" rel="stylesheet">
-		<link href="assets/css/simple-sidebar.css" rel="stylesheet">
-		
-		<!--JavaScript Library-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
-		<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	-->
-	</head>
+<head>
+<?php include '../objects/head-meta.php'; ?>
+<?php include '../objects/head-link-sub.php'; ?>
+<link href="assets/css/simple-sidebar.css" rel="stylesheet">
+<link href="assets/css/ann-view.css" rel="stylesheet">
+</head>
 <body>
 	<div id="wrapper" class="toggled"><!-- Sidebar -->
         <?php include 'manager-menu.php'; ?>
@@ -45,15 +23,15 @@
 			</div>
 			
 			<form id="formEdit" class="form-horizontal" action="php/ann-Update-process.php" method="post">
-			<?php    
-				$numberArray = $_POST['number'];
-				foreach ($numberArray as $number){
-					$number = (int)($number);
-					$sql = "SELECT title,type,context,postID FROM bulletin WHERE postID='$number'";
-					$result = mysql_query($sql);
-					$row = mysql_fetch_row($result);
-				}			
-			?>
+				<?php    
+					$numberArray = $_POST['number'];
+					foreach ($numberArray as $number){
+						$number = (int)($number);
+						$sql = "SELECT title,type,context,postID FROM bulletin WHERE postID='$number'";
+						$result = mysql_query($sql);
+						$row = mysql_fetch_row($result);
+					}			
+				?>
 				<label for="annTitle" class="col-md-2" control-label >公告名稱：</label>
 				<div class="col-md-10">
 					<input id="annTitle" class="form-control" name="title" type="text" value="<?php echo $row[0]; ?>" required/>
@@ -83,9 +61,6 @@
 				</div>			
 			</form>
 		</div>
-	</div><!-- /#sidebar-wrapper -->
-		
-	<!-- Menu Toggle Script -->
-    <script type="text/javascript" src="assets/js/menu-trigger.js"></script>
+	</div> <!-- /#sidebar-wrapper -->
 </body>
 </html>

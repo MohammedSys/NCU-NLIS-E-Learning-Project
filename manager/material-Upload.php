@@ -9,7 +9,7 @@
 <link href="assets/css/material-upload.css" rel="stylesheet">
 <link href="assets/css/simple-sidebar.css" rel="stylesheet">
 <!--Customized JacaScript-->
-<script type="text/javascript" src="assets/js/manager-submitCheck.js"></script>
+<script type="text/javascript" src="assets/js/material-submit-check.js"></script>
 </head>
 <body>
 	<div id="wrapper" class="toggled"><!-- Sidebar -->
