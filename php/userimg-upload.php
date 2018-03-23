@@ -126,7 +126,9 @@ $flag = 0;
     }
     else
     {
-        rename($target_path, "../uploads/".$_SESSION['account'].$dft_img_format);
+        $path = "../uploads/".$_SESSION['account'].$dft_img_format;
+        rename( $target_path, $path );
+        chmod( $path, 0644 );
         $MSG = "上傳成功<br />等待網頁跳轉";
         echo $pageLook_U.$MSG.$pageLook_L;
         echo '<meta http-equiv=REFRESH CONTENT=3;url=../modify.php>';
