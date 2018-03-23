@@ -16,9 +16,10 @@
 <!--Customized JS Code-->
 <script type="text/javascript" src="assets/js/openlink.js"></script>
 <script type="text/javascript" src="assets/js/submitCheck.js"></script>
-
-<!-- Menu Toggle Script -->
+<script type="text/javascript" src="assets/js/b-to-top.js"></script>
+<!-- // Menu Toggle Script -->
 <script type="text/javascript" src="assets/js/menu-toggled.js"></script>
 
 <!--Customized CSS Settings-->
 <link rel="stylesheet" href="assets/css/hippo.css">
+<link rel="stylesheet" href="assets/css/b-to-top.css">
