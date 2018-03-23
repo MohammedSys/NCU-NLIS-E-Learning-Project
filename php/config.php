@@ -22,4 +22,6 @@ $mail_pwd = "";
 
 $dft_img_format = ".jpg";
 
+$loc_ads = './ads/';
+
 ?>
