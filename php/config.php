@@ -20,4 +20,6 @@ $mail_acc = "";
 // passwod for mailing account
 $mail_pwd = "";
 
+$dft_img_format = ".jpg";
+
 ?>
