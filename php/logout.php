@@ -1,7 +1,8 @@
 <?php session_start(); ?>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
-//將session清空
+// 將session清空
+// clear the cookie
 unset($_SESSION['account']);
 echo '<meta http-equiv=REFRESH CONTENT=2;url=../index.php>';
 ?>
