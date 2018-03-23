@@ -41,8 +41,8 @@
 				<div class="carousel-inner">
 					<!-- automatically includes all the ads using php -->
 					<?php
-						$ads = preg_grep( '/^([^.])/', scandir( 'ads/' ) );
-						foreach( $ads as $ad ) include $ad;
+						$ads = preg_grep( '/^([^.])/', scandir( $loc_ads ) );
+						foreach( $ads as $ad ) include $loc_ads.$ad;
 					?>
 				</div>
 				
